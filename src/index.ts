@@ -935,9 +935,7 @@ export interface SolverResult<T> {
 
 /** User state for hint access control */
 export type HintAccessUserState =
-  | 'anonymous'
-  | 'no_subscription'
-  | 'insufficient_tier';
+  'anonymous' | 'no_subscription' | 'insufficient_tier';
 
 /** Entitlement identifiers for hint access */
 export type HintEntitlement = 'blue_belt' | 'red_belt';
