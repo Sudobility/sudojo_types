@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/sudojo_types",
-  "version": "1.2.73",
+  "version": "1.2.74",
   "description": "TypeScript types for Sudojo API - Sudoku learning platform",
   "type": "module",
   "main": "./dist/index.js",
@@ -40,11 +40,11 @@
   "author": "Sudobility",
   "license": "BUSL-1.1",
   "peerDependencies": {
-    "@sudobility/types": "^1.9.71"
+    "@sudobility/types": "^1.9.72"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
-    "@sudobility/types": "^1.9.71",
+    "@sudobility/types": "^1.9.72",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
     "eslint": "^9.38.0",
@@ -61,6 +61,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnqh/sudojo_types.git"
+    "url": "https://github.com/Sudobility/sudojo_types.git"
   }
 }
