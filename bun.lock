@@ -6,7 +6,7 @@
       "name": "@sudobility/sudojo_types",
       "devDependencies": {
         "@eslint/js": "^9.38.0",
-        "@sudobility/types": "^1.9.71",
+        "@sudobility/types": "^1.9.74",
         "@typescript-eslint/eslint-plugin": "^8.46.2",
         "@typescript-eslint/parser": "^8.46.2",
         "eslint": "^9.38.0",
@@ -19,7 +19,7 @@
         "vitest": "^4.0.15",
       },
       "peerDependencies": {
-        "@sudobility/types": "^1.9.71",
+        "@sudobility/types": "^1.9.74",
       },
     },
   },
@@ -156,7 +156,7 @@
 
     "@standard-schema/spec": ["@standard-schema/spec@1.0.0", "", {}, "sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA=="],
 
-    "@sudobility/types": ["@sudobility/types@1.9.71", "", {}, "sha512-BhgnvH5zF3HEiknZYbhtaMEuQ9q18qBFJErg8hzObJaHlXp95RauswKLeoHl9viVCFtpiWhOUPiT5kA5/iR7bQ=="],
+    "@sudobility/types": ["@sudobility/types@1.9.74", "https://npm.pkg.github.com/download/@sudobility/types/1.9.74/f9ad864ba5d8d1097e7e48378ebee8aa7e129e88", {}, "sha512-jgt0F1r71qjFNiRNn/1YlL4JU65sjnzYd8Sfi+Y9z62Lu9VhIXeqWAH12u7/hmGPZqG3nxzn0V+s3sFkB1qWuQ=="],
 
     "@types/chai": ["@types/chai@5.2.3", "", { "dependencies": { "@types/deep-eql": "*", "assertion-error": "^2.0.1" } }, "sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA=="],
 
