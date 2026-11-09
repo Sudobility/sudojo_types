@@ -4,7 +4,14 @@ Shared TypeScript type definitions for the Sudojo Sudoku learning platform.
 
 ## Installation
 
+This package is published to **GitHub Packages**, not the public npm registry. Configure the `@sudobility` scope and a GitHub token with `read:packages` before installing:
+
 ```bash
+# project .npmrc (committed here) already routes the scope:
+#   @sudobility:registry=https://npm.pkg.github.com
+# add auth once, in your user ~/.npmrc (never commit the token):
+#   //npm.pkg.github.com/:_authToken=<GH_PAT_with_read:packages>
+
 bun add @sudobility/sudojo_types @sudobility/types
 ```
 
@@ -33,10 +40,10 @@ import { techniqueBitmaskOf, hasTechniqueInBitmask, formatTechniqueBitmask } fro
 
 ```bash
 bun run build        # Build ESM (dist/index.js + .d.ts)
-bun run test         # Run tests once
-bun run typecheck    # TypeScript check
+bun run test:unit    # Run tests once (vitest); test:watch for watch mode
+bun run typecheck    # TypeScript check (tsc --noEmit)
 bun run lint         # ESLint
-bun run verify       # Typecheck + lint + test + build
+bun run verify       # Typecheck + lint + test:unit + build
 ```
 
 ## Related Packages
