@@ -21,8 +21,7 @@ export type {
 export { SubscriptionPlatform } from '@sudobility/types';
 export { successResponse, errorResponse } from '@sudobility/types';
 
-import type { Optional } from '@sudobility/types';
-import type { SubscriptionPlatform } from '@sudobility/types';
+import type { Optional, SubscriptionPlatform } from '@sudobility/types';
 
 // =============================================================================
 // Entity Types (database models)
