@@ -3,7 +3,9 @@
  * TypeScript types for Sudojo API - Sudoku learning platform
  */
 
-// Re-export common types from @sudobility/types
+// Re-export common types from @sudobility/types. The generic response/health
+// types and the response constructors are the canonical ones from
+// @sudobility/types — this package never redefines them.
 export type {
   ApiResponse,
   BaseResponse,
@@ -11,9 +13,13 @@ export type {
   PaginatedResponse,
   PaginationInfo,
   PaginationOptions,
+  ApiInfoResponse,
+  HealthResponse,
+  HealthCheckData,
 } from '@sudobility/types';
 
 export { SubscriptionPlatform } from '@sudobility/types';
+export { successResponse, errorResponse } from '@sudobility/types';
 
 import type { Optional } from '@sudobility/types';
 import type { SubscriptionPlatform } from '@sudobility/types';
@@ -580,38 +586,12 @@ export interface PracticesRegenerateHintsData {
 }
 
 // =============================================================================
-// Response Helper Types
+// Response helpers & health check response
+//
+// `successResponse`, `errorResponse`, `HealthResponse` and `HealthCheckData`
+// are re-exported from `@sudobility/types` at the top of this file — they are
+// not defined here.
 // =============================================================================
-
-import type { BaseResponse } from '@sudobility/types';
-
-/** Create a success response */
-export function successResponse<T>(data: T): BaseResponse<T> {
-  return {
-    success: true,
-    data,
-    timestamp: new Date().toISOString(),
-  };
-}
-
-/** Create an error response */
-export function errorResponse(error: string): BaseResponse<never> {
-  return {
-    success: false,
-    error,
-    timestamp: new Date().toISOString(),
-  };
-}
-
-// =============================================================================
-// Health check response
-// =============================================================================
-
-export interface HealthCheckData {
-  name: string;
-  version: string;
-  status: string;
-}
 
 // =============================================================================
 // Subscription Types (RevenueCat integration)

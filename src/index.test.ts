@@ -538,12 +538,10 @@ describe('Response Types', () => {
 
   it('HealthCheckData should have correct shape', () => {
     const health: HealthCheckData = {
-      name: 'sudojo-api',
       version: '1.0.0',
       status: 'healthy',
     };
 
-    expectTypeOf(health.name).toBeString();
     expectTypeOf(health.version).toBeString();
     expectTypeOf(health.status).toBeString();
   });
